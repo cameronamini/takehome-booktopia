@@ -2,7 +2,6 @@ import React, { lazy, Suspense, useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 import { AiOutlineSearch } from "react-icons/ai";
-// const AiOutlineSearch = lazy(() => import("react-icons/ai"));
 const Results = lazy(() => import("./Results"));
 
 export default function App() {
