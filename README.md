@@ -16,7 +16,9 @@ Given more time, I would:
 Es9, released in 2018, added the ability to use spread for object literals rather than just arras. 
 I've used this to clone objects before, useful so you can modify a clone without modifying the original object. 
 
-let objClone = { ...obj }; //copies all key-value pairs from obj
+`let objClone = { ...obj }; //copies all key-value pairs from obj`
+
+
 
 3.	How would you track down a performance issue in production? Have you ever had to do this?
 
@@ -28,8 +30,10 @@ so that improted components that don't need to be rendered when the page loads d
 React developer tools is another tool to diagnose performance issues when you have a large app with many components.
  It shows all the components that have been loaded and the loading time for each.
 
+
+
  4.	How would you improve the API that you just used?
- 
+
  I would improve the Open Library API a few different ways. 
  There are many different APIs and it's not immediately clear which one a user should use. Users have to look at 
  each API to see which one is appropriate. I would seperate the APIs into larger categories, such as the 
@@ -42,7 +46,9 @@ I would also include an overview section with more helfpul information for using
 about ISBNs, OLIDs, etc. For example I had no idea books had multiple ISBNs and this caused me some confusion. 
 
 
+
 5.	Please describe yourself using correctly formatted JSON.
+```
 {
   "name": "Cameron Amini",
   "hometown": "Scarborough, Ontario",
@@ -51,10 +57,4 @@ about ISBNs, OLIDs, etc. For example I had no idea books had multiple ISBNs and 
   "weaknesses": "carbs",
   "vimOrEmacs": "vim"
 }
-height
-weight
-values
-favourite food
-hometown
-
-
+```
