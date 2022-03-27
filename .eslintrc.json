@@ -1,0 +1,25 @@
+{
+  "extends": ["react-app", "prettier", "plugin:jsx-a11y/recommended", "plugin:cypress/recommended", "eslint:recommended"],
+  "plugins": ["jsx-a11y", "prettier",  "cypress"],
+  "rules": {
+    "jsx-a11y/label-has-associated-control": ["error", {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }],
+    "jsx-a11y/label-has-for": ["error", {
+      "required": {
+        "some": ["nesting", "id"]
+      }
+    }],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "no-console": "warn"
+  }
+}
+
+
