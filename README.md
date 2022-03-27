@@ -1,3 +1,5 @@
+BMO takehome 
+Cameron Amini
 
 1. 
 I spent 3 hours on the assignment spread out over a few days. 
