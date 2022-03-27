@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 import { AiOutlineSearch } from "react-icons/ai";
 // const AiOutlineSearch = lazy(() => import("react-icons/ai"));
-const Book = lazy(() => import("./Book"));
+const Results = lazy(() => import("./Results"));
 
 export default function App() {
   const [input, setInput] = useState("");
@@ -83,16 +83,6 @@ export default function App() {
     setInput("");
   };
 
-  const tiles = books.map((book) => (
-    <Book
-      key={book.isbn}
-      title={book.title}
-      authors={book.authors}
-      publishDate={book.publishDate}
-      imgURL={`https://covers.openlibrary.org/b/isbn/${book.isbn}-M.jpg?default=false `}
-    />
-  ));
-
   return (
     <div className="App">
       <Suspense fallback={<div>Loading...</div>}>
@@ -138,7 +128,7 @@ export default function App() {
 
         {loading && <div className="loading">Loading</div>}
         <main className="resultsContainer">
-          {!loading && books ? tiles : null}
+          {!loading && books.length > 0 ? <Results books={books} /> : null}
           {!loading && noResults ? (
             <div className="no-results">No Results found</div>
           ) : null}
