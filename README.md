@@ -12,12 +12,14 @@ Given more time, I would:
 
 
 2.	What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
+
 Es9, released in 2018, added the ability to use spread for object literals rather than just arras. 
 I've used this to clone objects before, useful so you can modify a clone without modifying the original object. 
 
 let objClone = { ...obj }; //copies all key-value pairs from obj
 
 3.	How would you track down a performance issue in production? Have you ever had to do this?
+
 My favourite tool for diagnosing performance issues is the lighthouse chrome extension. I use it to
 generate a report about my app's performance and assess whether the issue lies in the bundle size, 
 unnecessary rerenders, or something else entirely.
@@ -27,6 +29,7 @@ React developer tools is another tool to diagnose performance issues when you ha
  It shows all the components that have been loaded and the loading time for each.
 
  4.	How would you improve the API that you just used?
+ 
  I would improve the Open Library API a few different ways. 
  There are many different APIs and it's not immediately clear which one a user should use. Users have to look at 
  each API to see which one is appropriate. I would seperate the APIs into larger categories, such as the 
