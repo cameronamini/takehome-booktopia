@@ -49,6 +49,7 @@ export default function App() {
         isbn: item.isbn[0].trim(),
         publishDate: item.publish_date[0],
       }));
+
       if (sort) {
         sortFn(results, sort);
       } else {
@@ -79,14 +80,15 @@ export default function App() {
       const query = input.trim().replace(" ", "+");
       getBooks(query);
     }
-    setInput("");
   };
 
   return (
     <div className="App">
       <Suspense fallback={<div>Loading...</div>}>
         <header className="header">
-          <h1 className="logo">Booktopia</h1>
+          <h1 className="logo" data-testid="logo">
+            Booktopia
+          </h1>
           <form className="form" onSubmit={submitHandler}>
             <label className="hiddenLabel" aria-hidden htmlFor="searchbar">
               <input
@@ -94,6 +96,7 @@ export default function App() {
                 name="searchbar"
                 id="searchbar"
                 type="text"
+                data-testid="searchbar"
                 value={input}
                 onChange={changeHandler}
               />

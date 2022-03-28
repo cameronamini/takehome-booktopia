@@ -2,7 +2,7 @@ import React, { lazy } from "react";
 const Book = lazy(() => import("./Book"));
 
 export default function Results({ books }) {
-  const tiles = books.map((book) => (
+  const tiles = books.map((book, i) => (
     <Book
       key={book.isbn}
       title={book.title}

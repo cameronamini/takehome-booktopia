@@ -2,13 +2,18 @@ BMO takehome
 Cameron Amini
 
 1. 
-I spent 3 hours on the assignment spread out over a few days. 
+I spent 3 or 4 hours on the assignment spread out over a few days. Unfortunately it was a busy week for me due to a move and so I couldn't spend as much time as I would have liked.
+
 Given more time, I would:
+- add a select input so users can choose how many results they want shown
 - add ability to favourite books
 - add pagination and fetch more books 
 - consume and display more information about each book from api
 - I would add a sidebar with the ability to filter the results based on different parameters, eg publication year
-
+- I would handle more edge cases, for example with some unlikely queries (eg a random number like '433'), the app errors out because the books that the api returns are missing certain fields (eg publish date) which
+the code assumes are there. To handle these edge cases I would conditionally add properties to the books
+stored in state based on whether a property exists on the book object returned from the API
+- I would add more test cases as well
 
 
 2.	What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
