@@ -1,6 +1,11 @@
 BMO takehome 
 Cameron Amini
 
+To run:
+- clone the repo
+- run `npm i`
+- run `npm start`
+
 1. 
 I spent 3 or 4 hours on the assignment spread out over a few days. Unfortunately it was a busy week for me due to a move and so I couldn't spend as much time as I would have liked.
 
